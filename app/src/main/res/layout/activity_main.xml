@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="382dp"
+            android:layout_height="430dp"
+            android:contentDescription="@string/image_desc" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/prevImageButton"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:text="п" />
+
+            <Button
+                android:id="@+id/nextImageButton"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:text="c" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/songTitle"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Title"
+            android:textAlignment="center"
+            android:textSize="24sp" /> <!-- Отступ сверху -->
+
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play"
+            android:layout_marginTop="8dp" /> <!-- Отступ сверху -->
+
+        <Button
+            android:id="@+id/pauseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pause"
+            android:layout_marginTop="8dp" /> <!-- Отступ сверху -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp"> <!-- Отступ сверху -->
+
+            <Button
+                android:id="@+id/prevSongButton"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:text="п" />
+
+            <Button
+                android:id="@+id/nextSongButton"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:text="с" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
